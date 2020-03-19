@@ -1,0 +1,34 @@
+.header {}
+
+.header__title {
+    color: white;
+    font-size: 9rem;
+    letter-spacing: .7rem;
+    text-align: center;
+    margin: 15rem 0 5rem;
+    font-weight: 300;
+}
+
+.header__list {
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.header__listItem {
+    color: white;
+    background-color: #520099;
+    width: 45rem;
+    height: 7.5rem;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    clip-path: polygon(84% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
+}
+
+.header__listItem:hover {
+    cursor: pointer;
+}

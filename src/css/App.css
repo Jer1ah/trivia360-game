@@ -1,0 +1,8 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    background-color: #7400D8;
+    font-family: 'Source Code Pro', monospace;
+}

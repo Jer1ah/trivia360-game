@@ -1,0 +1,57 @@
+.highScores {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.highScores h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 7rem;
+    letter-spacing: .5rem;
+    margin: 7rem 0 5rem;
+}
+
+.highScores__list {
+    list-style: none;
+    padding: 0;
+    width: 60rem;
+    margin-bottom: 5rem;
+}
+
+.highScores__listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.highScores__listItem h3 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h3.playerScore {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.highScores button {
+    border: none;
+    color: white;
+    background-color: #520099;
+    letter-spacing: .5rem;
+    clip-path: polygon(84% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
+    height: 6rem;
+    width: 20rem;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 11rem;
+}
+
+.highScores button:hover {
+    cursor: pointer;
+}
