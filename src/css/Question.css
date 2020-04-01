@@ -1,0 +1,117 @@
+.question__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5rem 0 6rem;
+}
+
+.homeButton {
+    background-color: #520099;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid .2rem white;
+    margin: 0 2rem 0 3rem;
+}
+
+.homeButton img {
+    height: 3rem;
+}
+
+.playerScore {
+    height: 5rem;
+    width: 20rem;
+    background-color: #520099;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    border: solid .2rem white;
+}
+
+.playerTimer {
+    position: absolute;
+    top: 3.7rem;
+    right: 4rem;
+    background-color: #520099;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .2rem solid white;
+    height: 5rem;
+    width: 12rem;
+    font-size: 2.2rem;
+}
+
+.questionTimer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #520099;
+    color: white;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    border: .2rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.3rem;
+}
+
+.question {
+    text-align: center;
+    margin: 3.3rem auto 3rem;
+    width: 95rem;
+    height: 12rem;
+    background-color: #520099;
+    color: white;
+    clip-path: polygon(84% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question p {
+    font-size: 2.2rem;
+    width: 70%;
+    letter-spacing: .3rem;
+}
+
+.answersList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90rem;
+    margin: 0 auto;
+}
+
+.answersList__item {
+    background-color: #520099;
+    color: white;
+    height: 7rem;
+    width: 40rem;
+    clip-path: polygon(84% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    margin: 2rem 1.5rem;
+}
+
+.answersList__item a {
+    color: white;
+    text-decoration: none;
+}
+
+.answersList__item:hover {
+    cursor: pointer;
+    background-color: #440080;
+}

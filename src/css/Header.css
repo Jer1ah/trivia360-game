@@ -32,3 +32,8 @@
 .header__listItem:hover {
     cursor: pointer;
 }
+
+.link {
+    color: white;
+    text-decoration: none;
+}

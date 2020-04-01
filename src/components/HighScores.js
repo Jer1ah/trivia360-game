@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import '../css/HighScores.css';
 
@@ -28,7 +29,7 @@ const highScores = () => {
                     <h3 className='playerScore'>310</h3>
                 </li>
             </ul>
-            <button>Go Back</button>
+            <Link to="/" className="highScoreLink">Go Home</Link>
         </div>
     );
 };

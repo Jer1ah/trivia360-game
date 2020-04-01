@@ -39,7 +39,7 @@ h3.playerScore {
     font-weight: 500;
 }
 
-.highScores button {
+.highScoreLink {
     border: none;
     color: white;
     background-color: #520099;
@@ -50,6 +50,10 @@ h3.playerScore {
     font-size: 2rem;
     font-weight: 300;
     margin-bottom: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 .highScores button:hover {
