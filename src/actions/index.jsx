@@ -25,3 +25,17 @@ export const nextQuestion = () => {
         payload: 1
     };
 };
+
+export const resetGame = () => {
+    return {
+        type: 'RESET_GAME',
+        payload: 0
+    }
+};
+
+export const addHighScore = (highscore) => {
+    return {
+        type: 'ADD_HIGHSCORE',
+        payload: highscore
+    }
+};

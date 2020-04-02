@@ -56,6 +56,6 @@ h3.playerScore {
     text-decoration: none;
 }
 
-.highScores button:hover {
+.highScoreLink:hover {
     cursor: pointer;
 }

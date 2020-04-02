@@ -1,14 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import highScores from '../game-data/highScores';
 import HighScoreListItem from './HighScoreListItem';
 
 import '../css/HighScores.css';
 
 class HighScores extends React.Component {
     renderHighScores = () => {
-        let list = highScores.map((player, index) => {
+        let list = this.props.highScores.map((player, index) => {
             return <HighScoreListItem 
                         playerName={player[1]}
                         playerScore={player[0]}
@@ -33,4 +33,10 @@ class HighScores extends React.Component {
     }
 };
 
-export default HighScores;
+const mapStateToProps = (state) => {
+    return {
+        highScores: state.highScores
+    };
+};
+
+export default connect(mapStateToProps)(HighScores);
