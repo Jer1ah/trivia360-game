@@ -18,6 +18,43 @@ class Question extends React.Component {
         //}, 1000);
     }
 
+    renderQuestion = (index) => {
+        return (
+            <div>
+                <div className='question'><p>{questions[index]}</p></div>
+                <ul className='answersList' onClick={(event) => {
+                    if(event.target.tagName === "LI") {
+                        if(event.target.innerHTML === rightAnswers[index]) {
+                            this.props.rightAnswer();
+                        } else {
+                            this.props.wrongAnswer();
+                        }
+                        this.props.nextQuestion();
+                    }
+                }}>
+                    <li className='answersList__item'>{answers[index][0]}</li>
+                    <li className='answersList__item'>{answers[index][1]}</li>
+                    <li className='answersList__item'>{answers[index][2]}</li>
+                    <li className='answersList__item'>{answers[index][3]}</li>
+                </ul>
+            </div>
+        );
+    };
+
+    renderFinal = () => {
+        return (
+            <div className="final">
+                <h1>You Scored: {this.props.score} Points</h1>
+                <input type="text" placeholder="Enter Name"/>
+                <button>Add to Leaderboard</button>
+                <ul className="buttonList">
+                    <li>Retake Quiz</li>
+                    <li><Link to="/" className="homeLink">Go Home</Link></li>
+                </ul>
+            </div>
+        );
+    };
+
     render() {
         let { index } = this.props;
         return (
@@ -27,15 +64,7 @@ class Question extends React.Component {
                     <div className='playerScore'><h3>{this.props.score}</h3></div>
                     <h2 className='playerTimer'>:{this.props.counter}</h2>
                 </div>
-                <div>
-                    <div className='question'><p>{questions[index]}</p></div>
-                    <ul className='answersList' onClick={this.props.nextQuestion}>
-                        <li className='answersList__item'>{answers[index][0]}</li>
-                        <li className='answersList__item'>{answers[index][1]}</li>
-                        <li className='answersList__item'>{answers[index][2]}</li>
-                        <li className='answersList__item'>{answers[index][3]}</li>
-                    </ul>
-                </div>
+                {questions.length !== index ? this.renderQuestion(index) : this.renderFinal()}
             </div>
         );
     }

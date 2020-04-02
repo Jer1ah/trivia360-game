@@ -1,37 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import highScores from '../game-data/highScores';
+import HighScoreListItem from './HighScoreListItem';
+
 import '../css/HighScores.css';
 
-const highScores = () => {
-    return (
-        <div className='highScores'>
-            <h1>Leaderboard</h1>
+class HighScores extends React.Component {
+    renderHighScores = () => {
+        let list = highScores.map((player, index) => {
+            return <HighScoreListItem 
+                        playerName={player[1]}
+                        playerScore={player[0]}
+                        index={index + 1}
+                    />
+        });
+        return (
             <ul className='highScores__list'>
-                <li className='highScores__listItem'>
-                    <h3 className='playerName'><span>1.</span> Stan Lee</h3>
-                    <h3 className='playerScore'>720</h3>
-                </li>
-                <li className='highScores__listItem'>
-                    <h3 className='playerName'><span>2.</span> Lebron James</h3>
-                    <h3 className='playerScore'>560</h3>
-                </li>
-                <li className='highScores__listItem'>
-                    <h3 className='playerName'><span>3.</span> Darth Vader</h3>
-                    <h3 className='playerScore'>480</h3>
-                </li>
-                <li className='highScores__listItem'>
-                    <h3 className='playerName'><span>4.</span> Captain America</h3>
-                    <h3 className='playerScore'>400</h3>
-                </li>
-                <li className='highScores__listItem'>
-                    <h3 className='playerName'><span>5.</span> Zendaya</h3>
-                    <h3 className='playerScore'>310</h3>
-                </li>
+                {list}
             </ul>
-            <Link to="/" className="highScoreLink">Go Home</Link>
-        </div>
-    );
+        );
+    };
+
+    render() {
+        return (
+            <div className='highScores'>
+                <h1>Leaderboard</h1>
+                {this.renderHighScores()}
+                <Link to="/" className="highScoreLink">Go Home</Link>
+            </div>
+        );
+    }
 };
 
-export default highScores;
+export default HighScores;

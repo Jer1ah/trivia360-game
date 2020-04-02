@@ -9,6 +9,7 @@ import Header from '../components/Header';
 import HighScores from '../components/HighScores';
 import Question from '../components/Question';
 import HowToPlay from '../components/HowToPlay';
+import FinalScore from '../components/FinalScore';
 
 import '../css/App.css';
 
@@ -26,6 +27,7 @@ const App = () => {
                     <Route exact path='/highscores' component={HighScores}/> 
                     <Route exact path='/question' component={Question}/>
                     <Route exact path='/howtoplay' component={HowToPlay}/>
+                    <Route exact path='/finalscore' component={FinalScore}/>
                 </Switch>
             </BrowserRouter>
         </Provider>
