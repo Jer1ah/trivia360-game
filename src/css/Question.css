@@ -48,24 +48,9 @@
     font-size: 2.2rem;
 }
 
-.questionTimer {
-    margin: 0 auto;
-    text-align: center;
-    background-color: #520099;
-    color: white;
-    height: 11rem;
-    width: 11rem;
-    border-radius: 50%;
-    border: .2rem solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3.3rem;
-}
-
 .question {
     text-align: center;
-    margin: 3.3rem auto 3rem;
+    margin: 15rem auto 3rem;
     width: 95rem;
     height: 12rem;
     background-color: #520099;

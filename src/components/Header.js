@@ -14,6 +14,9 @@ const Header = () => {
                     <li className="header__listItem">
                         <Link to='/highscores' className="link">High Scores</Link>
                     </li>
+                    <li className="header__listItem">
+                        <Link to='/howtoplay' className="link">How to Play</Link>
+                    </li>
                 </ul>
             </div>
     );

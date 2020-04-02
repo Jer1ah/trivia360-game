@@ -8,6 +8,7 @@ import reducers from '../reducers';
 import Header from '../components/Header';
 import HighScores from '../components/HighScores';
 import Question from '../components/Question';
+import HowToPlay from '../components/HowToPlay';
 
 import '../css/App.css';
 
@@ -24,6 +25,7 @@ const App = () => {
                     <Route exact path='/' component={Header}/>
                     <Route exact path='/highscores' component={HighScores}/> 
                     <Route exact path='/question' component={Question}/>
+                    <Route exact path='/howtoplay' component={HowToPlay}/>
                 </Switch>
             </BrowserRouter>
         </Provider>

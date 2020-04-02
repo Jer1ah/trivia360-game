@@ -1,14 +1,37 @@
 import { combineReducers } from 'redux';
 
-const sampleReducer = (state='dummyCode', action) => {
+const timerReducer = (state=0, action) => {
     switch(action.type) {
-        case 'POSITIVE':
-            return action.payload;
+        case 'TIMER_START':
+            return state + action.payload;
         default:
             return state;
     }
 };
 
+const answersReducer = (state=0, action) => {
+    switch(action.type) {
+        case 'RIGHT_ANSWER':
+            return state + action.payload;
+        case 'WRONG_ANSWER':
+            return state - action.payload;
+        default:
+            return state;
+    }
+};
+
+const nextQuestionReducer = (state=0, action) => {
+    switch(action.type) {
+        case 'NEXT_QUESTION':
+            return state + action.payload;
+        default:
+            return state;
+    }
+};
+
+
 export default combineReducers({
-    staticState: sampleReducer
+    timer: timerReducer,
+    score: answersReducer,
+    index: nextQuestionReducer
 });
