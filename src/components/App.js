@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { applyMiddleware, compose, createStore } from 'redux';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'; 
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'; 
 
 import reducers from '../reducers';
 
@@ -21,7 +21,7 @@ const store = createStore(reducers, composeEnhancers(
 const App = () => {
     return (
         <Provider store={store}>
-            <BrowserRouter>
+            <Router>
                 <Switch>
                     <Route exact path='/' component={Header}/>
                     <Route exact path='/highscores' component={HighScores}/> 
@@ -29,7 +29,7 @@ const App = () => {
                     <Route exact path='/howtoplay' component={HowToPlay}/>
                     <Route exact path='/finalscore' component={FinalScore}/>
                 </Switch>
-            </BrowserRouter>
+            </Router>
         </Provider>
     );
 };
