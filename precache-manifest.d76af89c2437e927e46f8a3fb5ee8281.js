@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7ca383e7a37a0c7745013c928755447",
+    "revision": "ffd53302052e6229b8910a4e64d83828",
     "url": "/trivia360-game/index.html"
   },
   {
-    "revision": "7fd23bdb1325003c5eed",
+    "revision": "a5b6f472f661fb3a7a6f",
     "url": "/trivia360-game/static/css/main.58b45a7d.chunk.css"
   },
   {
-    "revision": "7bf4a5d28dbe00c27439",
-    "url": "/trivia360-game/static/js/2.02553c24.chunk.js"
+    "revision": "bcbeb7fe871d9f5bbe94",
+    "url": "/trivia360-game/static/js/2.bb086619.chunk.js"
   },
   {
     "revision": "f231859d6585c4cd5f80c344783ed269",
-    "url": "/trivia360-game/static/js/2.02553c24.chunk.js.LICENSE.txt"
+    "url": "/trivia360-game/static/js/2.bb086619.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7fd23bdb1325003c5eed",
-    "url": "/trivia360-game/static/js/main.968c0554.chunk.js"
+    "revision": "a5b6f472f661fb3a7a6f",
+    "url": "/trivia360-game/static/js/main.66568a53.chunk.js"
   },
   {
     "revision": "3b5913ce64714da58aba",

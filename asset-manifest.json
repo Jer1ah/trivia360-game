@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/trivia360-game/static/css/main.58b45a7d.chunk.css",
-    "main.js": "/trivia360-game/static/js/main.968c0554.chunk.js",
-    "main.js.map": "/trivia360-game/static/js/main.968c0554.chunk.js.map",
+    "main.js": "/trivia360-game/static/js/main.66568a53.chunk.js",
+    "main.js.map": "/trivia360-game/static/js/main.66568a53.chunk.js.map",
     "runtime-main.js": "/trivia360-game/static/js/runtime-main.c27d69a4.js",
     "runtime-main.js.map": "/trivia360-game/static/js/runtime-main.c27d69a4.js.map",
-    "static/js/2.02553c24.chunk.js": "/trivia360-game/static/js/2.02553c24.chunk.js",
-    "static/js/2.02553c24.chunk.js.map": "/trivia360-game/static/js/2.02553c24.chunk.js.map",
+    "static/js/2.bb086619.chunk.js": "/trivia360-game/static/js/2.bb086619.chunk.js",
+    "static/js/2.bb086619.chunk.js.map": "/trivia360-game/static/js/2.bb086619.chunk.js.map",
     "index.html": "/trivia360-game/index.html",
-    "precache-manifest.37732793d91200b20d09ec1c1bf72877.js": "/trivia360-game/precache-manifest.37732793d91200b20d09ec1c1bf72877.js",
+    "precache-manifest.d76af89c2437e927e46f8a3fb5ee8281.js": "/trivia360-game/precache-manifest.d76af89c2437e927e46f8a3fb5ee8281.js",
     "service-worker.js": "/trivia360-game/service-worker.js",
     "static/css/main.58b45a7d.chunk.css.map": "/trivia360-game/static/css/main.58b45a7d.chunk.css.map",
-    "static/js/2.02553c24.chunk.js.LICENSE.txt": "/trivia360-game/static/js/2.02553c24.chunk.js.LICENSE.txt"
+    "static/js/2.bb086619.chunk.js.LICENSE.txt": "/trivia360-game/static/js/2.bb086619.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c27d69a4.js",
-    "static/js/2.02553c24.chunk.js",
+    "static/js/2.bb086619.chunk.js",
     "static/css/main.58b45a7d.chunk.css",
-    "static/js/main.968c0554.chunk.js"
+    "static/js/main.66568a53.chunk.js"
   ]
 }
