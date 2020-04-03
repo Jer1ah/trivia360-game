@@ -1,29 +1,13 @@
 .question__header {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 5rem 0 6rem;
-}
-
-.homeButton {
-    background-color: #520099;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    border: solid .2rem white;
-    margin: 0 2rem 0 3rem;
-}
-
-.homeButton img {
-    height: 3rem;
+    align-items: center;
+    margin: 10rem 0 0rem;
 }
 
 .playerScore {
-    height: 5rem;
-    width: 20rem;
+    height: 6rem;
+    width: 30rem;
     background-color: #520099;
     color: white;
     display: flex;
@@ -33,26 +17,26 @@
     border: solid .2rem white;
 }
 
-.playerTimer {
-    position: absolute;
-    top: 3.7rem;
-    right: 4rem;
-    background-color: #520099;
+.mainLink {
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: .2rem solid white;
-    height: 5rem;
-    width: 12rem;
+    text-decoration: none;
     font-size: 2.2rem;
+    letter-spacing: .2rem;
+    background-color: #520099;
+    height: 6rem;
+    width: 15rem;
+    border: solid .2rem white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
 }
 
 .question {
     text-align: center;
-    margin: 15rem auto 3rem;
-    width: 95rem;
-    height: 12rem;
+    margin: 10rem auto 3rem;
+    width: 115rem;
+    height: 15rem;
     background-color: #520099;
     color: white;
     clip-path: polygon(84% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
@@ -74,15 +58,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 90rem;
+    width: 110rem;
     margin: 0 auto;
 }
 
 .answersList__item {
     background-color: #520099;
     color: white;
-    height: 7rem;
-    width: 40rem;
+    height: 8rem;
+    width: 50rem;
     clip-path: polygon(84% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
     display: flex;
     justify-content: center;

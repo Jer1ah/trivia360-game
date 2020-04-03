@@ -9,5 +9,16 @@ export default [
     "8",
     "53",
     "16",
-    "15 Minutes"
+    "15 Minutes",
+    "1974",
+    "17",
+    "12",
+    "1970",
+    "1967",
+    "Don Shula",
+    "Pittsburgh Steelers",
+    "Chicago Bears",
+    "Green Bay Packers",
+    "Bill Belichick",
+    "New England Patriots"
 ];

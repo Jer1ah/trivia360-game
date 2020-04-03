@@ -9,5 +9,16 @@ export default [
     "How many divisions does the NFL have?",
     "How many players are on each teams roster?",
     "How many games are played in the regular season?",
-    "How long is each quarter in a game?"
+    "How long is each quarter in a game?",
+    "When was overtime added to NFL games?",
+    "How many weeks are in a regular NFL season?",
+    "How many teams make it to the playoffs?",
+    "In what year did the American Football League merge with the NFL?",
+    "When was the first Super Bowl held?",
+    "Who is the winningest head coach in the NFL?",
+    "Which team was not in the NFL in 1920?",
+    "Which team has the most regular season wins in the NFL?",
+    "Which team has won the most NFL championships?",
+    "Which coach has won the most Super Bowls?",
+    "Which team has the most Super Bowl appearances?"
 ]; 

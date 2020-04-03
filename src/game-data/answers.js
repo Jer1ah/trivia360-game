@@ -9,5 +9,16 @@ export default [
     ["6", "2", "4", "8"],
     ["44", "62", "53", "59"],
     ["16", "18", "12", "14"],
-    ["12 Minutes", "10 Minutes", "15 Minutes", "16 Minutes"]
+    ["12 Minutes", "10 Minutes", "15 Minutes", "16 Minutes"],
+    ["1960", "1974", "1980", "1968"],
+    ["14", "16", "18", "17"],
+    ["14", "8", "6", "12"],
+    ["1970", "1972", "1971", "1969"],
+    ["1920", "1967", "1935", "1944"],
+    ["Don Shula", "Tom Landry", "Bill Belichick", "George Halas"],
+    ["Pittsburgh Steelers", "Arizona Cardinals", "Dallas Cowboys", "Green Bay Packers"],
+    ["Dallas Cowboys", "New England Patriots", "Cleveland Browns", "Green Bay Packers"],
+    ["New England Patriots", "Dallas Cowboys", "Pittsburgh Steelers", "Green Bay Packers"],
+    ["Bill Belichick", "Tom Landry", "Vince Lombardi", "Tom Coughlin"],
+    ["Dallas Cowboys", "New England Patriots", "Green Bay Packers", "Pittsburgh Steelers"]
 ];

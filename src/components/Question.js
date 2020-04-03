@@ -2,31 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import { addToCount, 
-         rightAnswer, 
-         wrongAnswer, 
-         nextQuestion, 
-         resetGame,
-         addHighScore } 
-from '../actions';
+import { 
+    addToCount, 
+    rightAnswer, 
+    wrongAnswer, 
+    nextQuestion, 
+    resetGame,
+    addHighScore 
+} from '../actions';
 
-import homeIcon from '../img/home.svg';
 import '../css/Question.css';
 
 import questions from '../game-data/questions';
 import answers from '../game-data/answers';
 import rightAnswers from '../game-data/rightAnswers';
 
+
 class Question extends React.Component {
     constructor(props) {
         super(props);
         this.userInput = React.createRef();
-    }
-
-    componentDidMount() {
-        //setInterval(() => {
-        //    this.props.addToCount();
-        //}, 1000);
     }
 
     renderQuestion = (index) => {
@@ -77,13 +72,11 @@ class Question extends React.Component {
 
     render() {
         let { index } = this.props;
-        console.log();
         return (
             <div>
                 <div className='question__header'>
-                    <div className='homeButton' onClick={this.props.resetGame}><Link to="/"><img src={homeIcon} alt='Home Icon'/></Link></div>
+                    <Link to="/" className="mainLink" onClick={this.props.resetGame}>Go Back</Link>
                     <div className='playerScore'><h3>{this.props.score}</h3></div>
-                    <h2 className='playerTimer'>:{this.props.counter}</h2>
                 </div>
                 {questions.length !== index ? this.renderQuestion(index) : this.renderFinal()}
             </div>

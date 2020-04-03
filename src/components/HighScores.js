@@ -8,7 +8,10 @@ import '../css/HighScores.css';
 
 class HighScores extends React.Component {
     renderHighScores = () => {
-        let list = this.props.highScores.map((player, index) => {
+        let filteredList = this.props.highScores.sort(function(a, b) {
+            return b[0]-a[0];
+        });
+        let list = filteredList.map((player, index) => {
             return <HighScoreListItem 
                         playerName={player[1]}
                         playerScore={player[0]}

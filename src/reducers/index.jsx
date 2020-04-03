@@ -35,7 +35,7 @@ const nextQuestionReducer = (state=0, action) => {
     }
 };
 
-const highScoresReducer = (state=[[350, "Captain America"], [300, "SpiderMan"], [200, "Darth Vader"]], action) => {
+const highScoresReducer = (state=[[1150, "Joshua Fluke"], [800, "Elon Musk"], [550, "Steve Jobs"]], action) => {
     switch(action.type) {
         case 'ADD_HIGHSCORE':
             return [...state, action.payload];
